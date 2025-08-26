@@ -3,10 +3,7 @@ import asyncio
 from telethon import TelegramClient, events, errors, Button
 
 # === Heroku ENV Vars ===
-BOT_TOKEN = os.getenv("8139952900:AAF5Gk4l9xnx5OmaEeEr-zK5sPaUJ47hNAM")
-API_ID = int(os.getenv("20491966"))
-API_HASH = os.getenv("aa1c8f86db7f78fe9bfdd77bb48a5b23")
-OWNER_ID = int(os.getenv("6876826498"))
+from config import API_ID, API_HASH, BOT_TOKEN, OWNER_ID
 
 # === Runtime Vars ===
 destination_chat = None
